@@ -8,14 +8,25 @@
   </head>
   <body>
     <nav>
-      <div class="logo"><img src="assets/logo.png" alt="Mentro Logo" /></div>
+      <div class="logo">
+        <img src="assets/logo.png" alt="Mentro Logo" />
+      </div>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" target="_blank">Home</a></li>
       </ul>
     </nav>
 
-    <main style="padding-top: 100px">
+    <main class="instruction">
       <h1>Track Your Emotions</h1>
+
+      <div class="emotion-row">
+        <img src="assets/happy.png" alt="Happy" />
+        <img src="assets/angry.png" alt="Angry" />
+        <img src="assets/sad.png" alt="Sad" />
+        <img src="assets/anxious.png" alt="Anxious" />
+        <img src="assets/neutral.png" alt="Neutral" />
+      </div>
+
       <p>You can:</p>
       <ul>
         <li>Select emotion and add (Happy, Angry, Sad, Anxious, Neutral)</li>
@@ -23,12 +34,17 @@
         <li>Add description</li>
         <li>Add tags</li>
       </ul>
-      <p>
-        <img
-          src="assets/emotions-row.png"
-          alt="Emotions Row Screenshot"
-          style="max-width: 90%"
-        />
+
+      <img
+        src="assets/add-emotions.jpg"
+        alt="Add Emotion Screenshot"
+        class="add-emotion-img"
+      />
+
+      <p style="text-align: center; margin-top: 30px">
+        <a href="index.html" target="_blank" class="back-link"
+          >← Back to Home</a
+        >
       </p>
     </main>
   </body>
