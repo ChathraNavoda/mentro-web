@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,9 +8,22 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <img src="your-banner-image.jpg" alt="Mentro Banner" class="banner"/>
+  <nav>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Mentro Logo" />
+    </div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#why">Why Mentro</a></li>
+      <li><a href="#download">Download</a></li>
+    </ul>
+  </nav>
+
+  <header id="download">
+    <img src="assets/banner.png" alt="Mentro Banner" class="banner" />
     <h1>Welcome to Mentro 🌊</h1>
     <p>Your Emotional Companion</p>
     <a href="https://play.google.com/store/apps/details?id=your.package" target="_blank">
@@ -18,36 +32,56 @@
   </header>
 
   <main>
-    <section class="about">
+    <section id="about" class="about">
       <h2>About Mentro</h2>
-      <p>Mentro is more than just a mood tracker. It’s your safe space to understand, express, and heal your emotions through calming tasks, visual reflections, and personalized guidance — one ripple at a time.</p>
+      <p>Mentro is more than just a mood tracker. It’s your safe space to understand, express, and heal your emotions
+        through calming tasks, visual reflections, and personalized guidance — one ripple at a time.</p>
     </section>
 
-    <section class="features">
+    <section id="features" class="features">
       <h2>✨ What You Can Do With Mentro</h2>
-      <ul>
-        <li>🌈 Track Your Emotions with Ripples</li>
-        <li>📊 See Your Mood Analytics</li>
-        <li>🧘 Get Personalized Healing Suggestions</li>
-        <li>🎯 Complete Tasks and Celebrate Progress</li>
-        <li>📅 Timeline & History</li>
-        <li>🔐 Biometric Protection for Private Entries</li>
-        <li>🖌️ Creative Emotional Expression</li>
-        <li>📷 Gratitude Snaps & Kindness Bombs</li>
-        <li>🏆 Your Emotional Achievements Matter</li>
-      </ul>
+      <div class="cards">
+        <a href="track-emotions.html" class="card">
+          <img src="assets/happy.png" alt="Track Emotions" />
+          <h3>Track Your Emotions</h3>
+          <p>Log how you feel through a beautiful ripple-based interface.</p>
+        </a>
+
+        <a href="mood-analytics.html" class="card">
+          <img src="assets/graph.png" alt="Mood Analytics" />
+          <h3>Mood Analytics</h3>
+          <p>Gain insights over time with weekly, monthly trends and reflections.</p>
+        </a>
+
+        <a href="healing-tasks.html" class="card">
+          <img src="assets/heal.png" alt="Healing Tasks" />
+          <h3>Healing Tasks</h3>
+          <p>Personalized tasks like breathing, nature walks, meditations and more.</p>
+        </a>
+
+        <a href="ripple-privacy.html" class="card">
+          <img src="assets/safety.png" alt="Protect Ripples" />
+          <h3>Ripple Privacy</h3>
+          <p>Protect your ripples adding biometrics protection.</p>
+        </a>
+      </div>
+
+      </div>
     </section>
 
-    <section class="why">
+    <section id="why" class="why">
       <h2>💡 Why Mentro?</h2>
-      <p>Because emotional health isn’t one-size-fits-all. Mentro was built with care, inspired by real struggles and personal healing. Whether you're going through anxiety, heartbreak, stress, or simply want to understand yourself better — this app walks with you.</p>
-      <p>You don’t have to figure it all out today. Just ripple, reflect, and heal — one moment at a time.</p>
+      <p>Because emotional health isn’t one-size-fits-all. Mentro was built with care, inspired by real struggles and
+        personal healing. You don’t have to figure it all out today. Just ripple, reflect, and heal — one moment at a
+        time.</p>
     </section>
   </main>
 
   <footer>
     <p>Made with 💙 by Chathra Ranasinghe</p>
-    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="delete-account.html">Account Deletion</a></p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a
+        href="delete-account.html">Account Deletion</a></p>
   </footer>
 </body>
+
 </html>
