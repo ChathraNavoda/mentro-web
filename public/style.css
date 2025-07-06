@@ -307,3 +307,94 @@ main.analytics img:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
+/*------------Healing page-------------*/
+main.healing-tasks {
+  max-width: 800px;
+  margin: 100px auto 40px auto;
+  padding: 30px 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+main.healing-tasks h1 {
+  text-align: center;
+  color: #4ECDC4;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+main.healing-tasks p,
+main.healing-tasks ul {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+main.healing-tasks ul {
+  list-style: disc inside;
+  padding-left: 15px;
+  margin-bottom: 25px;
+}
+
+/* Grid styling for healing task images */
+main.healing-tasks {
+  max-width: 800px;
+  margin: 100px auto 40px auto;
+  padding: 30px 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+main.healing-tasks h1 {
+  text-align: center;
+  color: #4ECDC4;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+main.healing-tasks p,
+main.healing-tasks ul {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+main.healing-tasks ul {
+  list-style: disc inside;
+  padding-left: 15px;
+  margin-bottom: 25px;
+}
+
+/* Grid styling for healing task images */
+.task-category {
+  margin-bottom: 40px;
+}
+
+.task-category h2 {
+  color: #4ECDC4;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.healing-tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  justify-items: center;
+}
+
+.healing-tasks-grid img {
+  width: 80%;
+  max-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.healing-tasks-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
