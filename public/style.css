@@ -241,3 +241,69 @@ main.instruction .emotion-row img:hover {
   transform: scale(1.02);
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
+
+/* ----------- Mood Analytics Page Styling -----------*/
+
+main.analytics {
+  max-width: 700px; /* slightly reduced for compactness */
+  margin: 100px auto 40px auto;
+  padding: 20px 15px; /* reduced padding */
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+main.analytics h1 {
+  text-align: center;
+  color: #4ECDC4;
+  margin-bottom: 20px;
+  font-size: 22px; /* slightly smaller heading */
+}
+
+main.analytics p,
+main.analytics ul {
+  font-size: 14px; /* compact font */
+  line-height: 1.5;
+  color: #333;
+}
+
+main.analytics ul {
+  list-style: disc inside;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+main.analytics img {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+main.analytics img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+.analytics-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px; /* spacing between images */
+  flex-wrap: wrap; /* allows wrap on small screens */
+  margin: 20px 0;
+}
+
+.analytics-row img {
+  width: 25%;
+  max-width: 150px; /* optional: restrict max width for tiny screens */
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.analytics-row img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
