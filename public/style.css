@@ -62,13 +62,13 @@ header .banner {
 }
 
 header h1 {
-  margin: 10px 0 5px;
+  margin: 40px 0 5px;
   font-size: 40px;
 }
 
 header p {
   font-size: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .playstore-button {
