@@ -31,7 +31,7 @@ nav .logo img {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 45px;
   margin: 0;
   padding-right: 60px; /* added right padding */
 }
@@ -91,7 +91,7 @@ header p {
 }
 
 .playstore-button:hover {
-  background: #3cc1b9; /* darker teal on hover */
+  background: black; /* darker teal on hover */
 }
 
 
@@ -129,6 +129,33 @@ section.why {
   max-width: 800px;   /* optional: for consistency */
   margin: auto;       /* center within parent */
 }
+section.contact {
+  font-size: 24px;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+section.contact h2 {
+  color: #4ECDC4;
+  margin-bottom: 15px;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.contact-email {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4ECDC4;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Always 3 per row */
@@ -174,6 +201,7 @@ footer a {
   color: #4ECDC4;
   text-decoration: none;
   margin: 0 10px;
+  font-weight: 600;
 }
 
 footer a:hover {
