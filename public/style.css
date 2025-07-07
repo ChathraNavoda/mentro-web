@@ -528,7 +528,6 @@ main.privacy p {
 /* =======================
    MOBILE RESPONSIVENESS
    ======================= */
-
 @media (max-width: 768px) {
 
   nav {
@@ -561,7 +560,15 @@ main.privacy p {
   }
 
   header {
-    padding: 100px 20px 40px;
+    padding: 330px 20px 40px; /* single, final padding value */
+  }
+
+  header .banner {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
   }
 
   header h1 {
@@ -570,10 +577,6 @@ main.privacy p {
 
   header p {
     font-size: 18px;
-  }
-
-  header .banner {
-    max-width: 80%;
   }
 
   .playstore-button {
