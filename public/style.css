@@ -155,41 +155,53 @@ section.contact h2 {
 .contact-email:hover {
   text-decoration: underline;
 }
-
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Always 3 per row */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* adaptively fit cards */
   gap: 20px;
-  justify-items: center; /* center cards horizontally */
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px; /* optional container max width */
+  margin: 0 auto; /* center container */
+  box-sizing: border-box; /* prevents overflow due to padding */
+  padding: 0 10px; /* small horizontal padding for mobile */
 }
 
 .card {
-  font-size: 22px;
+  width: 100%;
+  max-width: 300px; /* controls maximum card size on desktop */
+  font-size: 20px;
   background: #f9f9f9;
   border-radius: 12px;
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
-  text-decoration: none; /* removes underline */
-  color: inherit; /* inherit text color from parent, not blue */
-  display: block; /* ensures the whole card is clickable */
+  text-decoration: none;
+  color: inherit;
+  display: flex; /* for consistent vertical alignment */
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 12px rgba(0,0,0,0.2);
-  background: #f0fefc; /* subtle Mentro teal tint on hover */
+  background: #f0fefc;
 }
 
-
-.card:nth-child(4) {
-  grid-column: 2 / 3; /* Place 4th card centered below */
-}
 .card img {
   height: 80px;
   margin-bottom: 10px;
+  object-fit: contain;
 }
+
+/* Remove forced centering of 4th card */
+.card:nth-child(4) {
+  grid-column: auto;
+}
+
 
 footer {
   background: #f0f0f0;
@@ -513,3 +525,104 @@ main.privacy p {
 }
 
 
+/* =======================
+   MOBILE RESPONSIVENESS
+   ======================= */
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  nav .logo img {
+    height: 36px;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+  }
+
+  header {
+    padding: 100px 20px 40px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  header .banner {
+    max-width: 80%;
+  }
+
+  .playstore-button {
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+
+  .playstore-button img {
+    height: 24px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr; /* single column layout on mobile */
+  }
+
+  .card {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+  section.about,
+  section.why {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+
+  section.contact {
+    font-size: 20px;
+    padding: 40px 10px;
+  }
+
+  .contact-email {
+    font-size: 18px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  footer a {
+    display: block;
+    margin: 5px 0;
+  }
+}
