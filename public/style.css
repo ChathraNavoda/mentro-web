@@ -36,12 +36,12 @@ nav ul {
   padding-right: 60px; /* added right padding */
 }
 
-
+nav ul li a,
 nav ul li a {
   color: #4ECDC4; /* text color in nav to Mentro teal */
   text-decoration: none;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
 nav ul li a:hover {
