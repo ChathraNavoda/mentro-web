@@ -1,3 +1,8 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Outfit', sans-serif;
   margin: 0;
@@ -523,44 +528,80 @@ main.privacy p {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
+.menu-toggle {
+  display: none; /* hide by default */
+}
 
 
 /* =======================
    MOBILE RESPONSIVENESS
    ======================= */
 @media (max-width: 768px) {
-html {
-  scroll-padding-top: 350px; /* adjust this to match your nav height on mobile */
-}
-  nav {
+  html {
+    scroll-padding-top: 350px;
+  }
+    nav {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     padding: 10px 20px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+  }
+    .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+ .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
   }
 
+  .menu-toggle img {
+    height: 28px;
+    width: 28px;
+    object-fit: contain;
+  }
   nav .logo img {
     height: 36px;
-    margin-bottom: 10px;
+
   }
 
   nav ul {
+    display: none;
     flex-direction: column;
     gap: 10px;
-    padding: 0 20px;
+    background: white; /* optional: background for mobile menu */
     width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute; /* overlay over banner */
+    top: 60px; /* adjust based on your nav height */
+    left: 0;
+    z-index: 999;
+  }
+
+  nav ul.show {
+    display: flex;
   }
 
   nav ul li {
     width: 100%;
   }
 
-  nav ul li a {
+   nav ul li a {
     font-size: 18px;
     display: block;
     width: 100%;
-    padding: 8px 0;
+    padding: 8px 20px;
+    box-sizing: border-box;
   }
-
   header {
     padding: 330px 20px 40px; /* single, final padding value */
   }
