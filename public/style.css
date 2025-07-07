@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -11,13 +12,17 @@ body {
   color: #333;
   scroll-behavior: smooth;
 }
+
 html {
-  scroll-padding-top: 80px; /* adjust based on nav height */
-  scroll-behavior: smooth;  /* already present, ensures smoothness */
+  scroll-padding-top: 80px;
+  /* adjust based on nav height */
+  scroll-behavior: smooth;
+  /* already present, ensures smoothness */
 }
 
 nav {
-  background: white; /* navbar background white */
+  background: white;
+  /* navbar background white */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,7 +31,8 @@ nav {
   width: 100%;
   top: 0;
   z-index: 1000;
-  border-bottom: 1px solid #4ECDC4; /* optional: subtle separator */
+  border-bottom: 1px solid #4ECDC4;
+  /* optional: subtle separator */
 }
 
 nav .logo img {
@@ -38,12 +44,14 @@ nav ul {
   display: flex;
   gap: 45px;
   margin: 0;
-  padding-right: 60px; /* added right padding */
+  padding-right: 60px;
+  /* added right padding */
 }
 
 nav ul li a,
 nav ul li a {
-  color: #4ECDC4; /* text color in nav to Mentro teal */
+  color: #4ECDC4;
+  /* text color in nav to Mentro teal */
   text-decoration: none;
   font-weight: 500;
   font-size: 16px !important;
@@ -79,8 +87,10 @@ header p {
 .playstore-button {
   display: inline-flex;
   align-items: center;
-  gap: 12px; /* spacing between icon and text */
-  background: white; /* Mentro teal background */
+  gap: 12px;
+  /* spacing between icon and text */
+  background: white;
+  /* Mentro teal background */
   color: #4ECDC4;
   text-decoration: none;
   padding: 16px 28px;
@@ -92,11 +102,13 @@ header p {
 }
 
 .playstore-button img {
-  height: 28px; /* adjust as needed for balance */
+  height: 28px;
+  /* adjust as needed for balance */
 }
 
 .playstore-button:hover {
-  background: black; /* darker teal on hover */
+  background: black;
+  /* darker teal on hover */
 }
 
 
@@ -120,20 +132,29 @@ section h2 {
 section.about {
   font-size: 24px;
   line-height: 1.6;
-  text-align: center; /* center aligns content */
-  max-width: 800px;   /* optional: for consistency */
-  margin: auto;       /* center within parent */
+  text-align: center;
+  /* center aligns content */
+  max-width: 800px;
+  /* optional: for consistency */
+  margin: auto;
+  /* center within parent */
 }
+
 section.features {
-  margin-top: 100px;  
+  margin-top: 100px;
 }
+
 section.why {
   font-size: 24px;
   line-height: 1.6;
-  text-align: center; /* center aligns content */
-  max-width: 800px;   /* optional: for consistency */
-  margin: auto;       /* center within parent */
+  text-align: center;
+  /* center aligns content */
+  max-width: 800px;
+  /* optional: for consistency */
+  margin: auto;
+  /* center within parent */
 }
+
 section.contact {
   font-size: 24px;
   text-align: center;
@@ -160,31 +181,39 @@ section.contact h2 {
 .contact-email:hover {
   text-decoration: underline;
 }
+
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* adaptively fit cards */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* adaptively fit cards */
   gap: 20px;
   justify-items: center;
   width: 100%;
-  max-width: 1200px; /* optional container max width */
-  margin: 0 auto; /* center container */
-  box-sizing: border-box; /* prevents overflow due to padding */
-  padding: 0 10px; /* small horizontal padding for mobile */
+  max-width: 1200px;
+  /* optional container max width */
+  margin: 0 auto;
+  /* center container */
+  box-sizing: border-box;
+  /* prevents overflow due to padding */
+  padding: 0 10px;
+  /* small horizontal padding for mobile */
 }
 
 .card {
   width: 100%;
-  max-width: 300px; /* controls maximum card size on desktop */
+  max-width: 300px;
+  /* controls maximum card size on desktop */
   font-size: 20px;
   background: #f9f9f9;
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   text-decoration: none;
   color: inherit;
-  display: flex; /* for consistent vertical alignment */
+  display: flex;
+  /* for consistent vertical alignment */
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
@@ -192,7 +221,7 @@ section.contact h2 {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   background: #f0fefc;
 }
 
@@ -224,8 +253,10 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
 button {
-  font-family: 'Outfit', sans-serif; /* ✅ explicitly set Outfit font */
+  font-family: 'Outfit', sans-serif;
+  /* ✅ explicitly set Outfit font */
   background: white;
   color: #4ECDC4;
   border: none;
@@ -240,24 +271,29 @@ button {
 /* ----------- Instruction Pages Styling -----------*/
 
 main.instruction {
-  max-width: 700px; /* reduce width slightly */
-  margin: 100px auto 40px auto; /* less vertical margin */
-  padding: 20px 15px; /* reduced padding */
+  max-width: 700px;
+  /* reduce width slightly */
+  margin: 100px auto 40px auto;
+  /* less vertical margin */
+  padding: 20px 15px;
+  /* reduced padding */
   background: #f9f9f9;
   border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
 }
 
 main.instruction h1 {
   text-align: center;
   color: #4ECDC4;
   margin-bottom: 20px;
-  font-size: 22px; /* reduced heading size */
+  font-size: 22px;
+  /* reduced heading size */
 }
 
 main.instruction p,
 main.instruction ul {
-  font-size: 14px; /* reduced font size for compactness */
+  font-size: 14px;
+  /* reduced font size for compactness */
   line-height: 1.5;
   color: #333;
 }
@@ -271,16 +307,18 @@ main.instruction ul {
 main.instruction img.instruction-img {
   display: block;
   margin: 20px auto;
-  max-width: 90%; /* ensure it's never oversized */
+  max-width: 90%;
+  /* ensure it's never oversized */
   border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .back-link {
   color: #4ECDC4;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px; /* smaller back link */
+  font-size: 14px;
+  /* smaller back link */
 }
 
 .back-link:hover {
@@ -292,17 +330,19 @@ main.instruction img.instruction-img {
 main.instruction .emotion-row {
   display: flex;
   justify-content: center;
-  gap: 15px; /* smaller gap */
+  gap: 15px;
+  /* smaller gap */
   flex-wrap: wrap;
   margin: 20px 0;
 }
 
 main.instruction .emotion-row img {
-  height: 50px; /* smaller icons */
+  height: 50px;
+  /* smaller icons */
   width: 50px;
   object-fit: contain;
   border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
 
@@ -317,36 +357,40 @@ main.instruction .emotion-row img:hover {
   margin: 20px auto;
   max-width: 35%;
   border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .add-emotion-img:hover {
   transform: scale(1.02);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* ----------- Mood Analytics Page Styling -----------*/
 
 main.analytics {
-  max-width: 700px; /* slightly reduced for compactness */
+  max-width: 700px;
+  /* slightly reduced for compactness */
   margin: 100px auto 40px auto;
-  padding: 20px 15px; /* reduced padding */
+  padding: 20px 15px;
+  /* reduced padding */
   background: #f9f9f9;
   border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
 }
 
 main.analytics h1 {
   text-align: center;
   color: #4ECDC4;
   margin-bottom: 20px;
-  font-size: 22px; /* slightly smaller heading */
+  font-size: 22px;
+  /* slightly smaller heading */
 }
 
 main.analytics p,
 main.analytics ul {
-  font-size: 14px; /* compact font */
+  font-size: 14px;
+  /* compact font */
   line-height: 1.5;
   color: #333;
 }
@@ -362,35 +406,40 @@ main.analytics img {
   margin: 20px auto;
   max-width: 90%;
   border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 main.analytics img:hover {
   transform: scale(1.02);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
 .analytics-row {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px; /* spacing between images */
-  flex-wrap: wrap; /* allows wrap on small screens */
+  gap: 20px;
+  /* spacing between images */
+  flex-wrap: wrap;
+  /* allows wrap on small screens */
   margin: 20px 0;
 }
 
 .analytics-row img {
   width: 25%;
-  max-width: 150px; /* optional: restrict max width for tiny screens */
+  max-width: 150px;
+  /* optional: restrict max width for tiny screens */
   border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .analytics-row img:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
 /*------------Healing page-------------*/
 main.healing-tasks {
   max-width: 800px;
@@ -398,7 +447,7 @@ main.healing-tasks {
   padding: 30px 20px;
   background: #f9f9f9;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 main.healing-tasks h1 {
@@ -428,7 +477,7 @@ main.healing-tasks {
   padding: 30px 20px;
   background: #f9f9f9;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 main.healing-tasks h1 {
@@ -474,23 +523,25 @@ main.healing-tasks ul {
   width: 80%;
   max-width: 200px;
   border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .healing-tasks-grid img:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
 /* ----------- Ripple Privacy Page Styling -----------*/
 
 main.privacy {
-  max-width: 800px; /* match healing page width */
+  max-width: 800px;
+  /* match healing page width */
   margin: 100px auto 40px auto;
   padding: 30px 20px;
   background: #f9f9f9;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 main.privacy h1 {
@@ -510,7 +561,8 @@ main.privacy p {
 
 .privacy-images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* similar to healing */
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  /* similar to healing */
   gap: 15px;
   justify-items: center;
   margin: 20px 0;
@@ -520,16 +572,18 @@ main.privacy p {
   width: 80%;
   max-width: 200px;
   border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .privacy-images img:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
 .menu-toggle {
-  display: none; /* hide by default */
+  display: none;
+  /* hide by default */
 }
 
 
@@ -540,7 +594,8 @@ main.privacy p {
   html {
     scroll-padding-top: 350px;
   }
-    nav {
+
+  nav {
     flex-direction: column;
     align-items: stretch;
     padding: 10px 20px;
@@ -548,13 +603,15 @@ main.privacy p {
     width: 100%;
     box-sizing: border-box;
   }
-    .nav-header {
+
+  .nav-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
   }
- .menu-toggle {
+
+  .menu-toggle {
     display: block;
     background: none;
     border: none;
@@ -567,6 +624,7 @@ main.privacy p {
     width: 28px;
     object-fit: contain;
   }
+
   nav .logo img {
     height: 36px;
 
@@ -576,13 +634,15 @@ main.privacy p {
     display: none;
     flex-direction: column;
     gap: 10px;
-    background: white; /* optional: background for mobile menu */
+    background: white;
     width: 100%;
     padding: 10px 0;
     margin: 0;
     box-sizing: border-box;
-    position: absolute; /* overlay over banner */
-    top: 60px; /* adjust based on your nav height */
+    position: fixed;
+    /* 🗝️ fixed instead of absolute */
+    top: 60px;
+    /* adjust based on nav height */
     left: 0;
     z-index: 999;
   }
@@ -595,15 +655,16 @@ main.privacy p {
     width: 100%;
   }
 
-   nav ul li a {
+  nav ul li a {
     font-size: 18px;
     display: block;
     width: 100%;
     padding: 8px 20px;
     box-sizing: border-box;
   }
+
   header {
-    padding: 330px 20px 40px; /* single, final padding value */
+   padding: 45px 20px 40px;
   }
 
   header .banner {
@@ -632,7 +693,8 @@ main.privacy p {
   }
 
   .cards {
-    grid-template-columns: 1fr; /* single column layout on mobile */
+    grid-template-columns: 1fr;
+    /* single column layout on mobile */
   }
 
   .card {
@@ -647,12 +709,12 @@ main.privacy p {
   section.about,
   section.why {
     font-size: 20px;
-    
+
   }
 
   section.contact {
     font-size: 20px;
-   
+
   }
 
   .contact-email {
