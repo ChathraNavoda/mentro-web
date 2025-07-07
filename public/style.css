@@ -132,7 +132,7 @@ section.why {
 section.contact {
   font-size: 24px;
   text-align: center;
-  padding: 60px 20px;
+  padding: 0px 20px;
 }
 
 section.contact h2 {
@@ -529,7 +529,9 @@ main.privacy p {
    MOBILE RESPONSIVENESS
    ======================= */
 @media (max-width: 768px) {
-
+html {
+  scroll-padding-top: 350px; /* adjust this to match your nav height on mobile */
+}
   nav {
     flex-direction: column;
     align-items: flex-start;
@@ -604,12 +606,12 @@ main.privacy p {
   section.about,
   section.why {
     font-size: 20px;
-    padding: 0 10px;
+    
   }
 
   section.contact {
     font-size: 20px;
-    padding: 40px 10px;
+   
   }
 
   .contact-email {
